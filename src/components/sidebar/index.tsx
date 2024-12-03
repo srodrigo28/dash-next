@@ -4,8 +4,7 @@ import { Button } from '../ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
 import { Home, LogOut, Package, PanelBottom, Settings, SettingsIcon, ShoppingBag, Users } from 'lucide-react'
 import { DialogTitle } from '@radix-ui/react-dialog'
-import { Tooltip, TooltipTrigger } from '../ui/tooltip'
-import { TooltipContent, TooltipProvider } from '@radix-ui/react-tooltip'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip'
 export function Sidebar(){
     return(
         <div className="flex w-full flex-col bg-muted/40">
@@ -20,7 +19,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
+                            <Link href="" className="flex bg-blue-500 h-9 w-9 shrink-0 items-center justify-center bg-transparent
                                 text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
                                 <Home className="h-4 w-4" />
                             </Link>
@@ -30,7 +29,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
+                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
                                 text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
                                 <ShoppingBag className="h-4 w-4" />
                             </Link>
@@ -40,7 +39,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
+                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
                                 text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
                                 <Users className="h-4 w-4" />
                             </Link>
@@ -50,7 +49,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
+                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
                                 text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
                                 <Settings className="h-4 w-4" />
                             </Link>
@@ -65,7 +64,7 @@ export function Sidebar(){
                     <TooltipProvider>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="" className="flex text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
+                                <Link href="" className="flex bg-red-400 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
                                     text-primary-foreground rounded-full hover:scale-110 hover:rotate-12 hover:bg-red-600 hover:text-white">
                                     <LogOut className="h-4 w-4" />
                                 </Link>
@@ -75,6 +74,7 @@ export function Sidebar(){
                     </TooltipProvider>
                 </nav>
             </aside>
+
             <div className="sm:hidden flex flex-col sm:py-4 sm:pl-14">
                 <header className=" sticky top-0 z-30 flex h-14 items-center px-4 border-b bg-background gap-4
                 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6 ">

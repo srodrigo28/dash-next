@@ -1,4 +1,5 @@
 import ChartOverview from "@/components/chart";
+import { Sales } from "@/components/sales";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DollarSign, Package, Users } from "lucide-react";
 
@@ -71,15 +72,13 @@ export default function Home() {
         <h2 className="text-2xl">Nossos resultados</h2>
         <hr className="border-b-4" />
       </section>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-red-600">
-        
-        <div className=" bg-blue-600 text-white m-3 p-4 text-5xl text-center">
+      <section className="h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
           <ChartOverview />
-        </div>
-        
-        <div className=" bg-blue-600 text-white m-3 p-4 text-5xl text-center">
           <ChartOverview />
-        </div>
+      </section>
+      <section className="mt-4 h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+        <ChartOverview />
+        <Sales />
       </section>
     </main>
   );
