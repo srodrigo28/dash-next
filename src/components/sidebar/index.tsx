@@ -19,8 +19,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex bg-blue-500 h-9 w-9 shrink-0 items-center justify-center bg-transparent
-                                text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
+                            <Link href="" className="btn-aside">
                                 <Home className="h-4 w-4" />
                             </Link>
                         </TooltipTrigger>
@@ -29,8 +28,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
-                                text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
+                            <Link href="" className="btn-aside">
                                 <ShoppingBag className="h-4 w-4" />
                             </Link>
                         </TooltipTrigger>
@@ -39,8 +37,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
-                                text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
+                            <Link href="" className="btn-aside">
                                 <Users className="h-4 w-4" />
                             </Link>
                         </TooltipTrigger>
@@ -49,8 +46,7 @@ export function Sidebar(){
 
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Link href="" className="flex bg-blue-500 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
-                                text-primary-foreground rounded-full hover:scale-110 hover:rotate-12">
+                            <Link href="" className="btn-aside">
                                 <Settings className="h-4 w-4" />
                             </Link>
                         </TooltipTrigger>
@@ -64,8 +60,7 @@ export function Sidebar(){
                     <TooltipProvider>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="" className="flex bg-red-400 text-black h-9 w-9 shrink-0 items-center justify-center bg-transparent
-                                    text-primary-foreground rounded-full hover:scale-110 hover:rotate-12 hover:bg-red-600 hover:text-white">
+                                <Link href="" className="btn-aside-out">
                                     <LogOut className="h-4 w-4" />
                                 </Link>
                             </TooltipTrigger>
