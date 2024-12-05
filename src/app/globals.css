@@ -66,6 +66,9 @@ body {
   * {
     @apply border-border;
   }
+  .page-principal{
+    @apply grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto
+  }
   .btn-aside{
     @apply flex bg-blue-500 h-9 w-9 shrink-0 items-center justify-center text-primary-foreground rounded-full hover:scale-110 hover:rotate-12
   }

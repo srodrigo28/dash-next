@@ -6,7 +6,7 @@ import { DollarSign, Package, Users } from "lucide-react";
 export default function Home() {
   return (
     <main className="sm:ml-14 p-4">
-      <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">        
+      <section className="page-principal">        
         <Card>
           <CardHeader>
             <div className="flex gap-4 items-center justify-center">

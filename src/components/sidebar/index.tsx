@@ -60,7 +60,7 @@ export function Sidebar(){
                     <TooltipProvider>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href="" className="btn-aside-out">
+                                <Link href="/login" className="btn-aside-out">
                                     <LogOut className="h-4 w-4" />
                                 </Link>
                             </TooltipTrigger>
